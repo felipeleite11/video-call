@@ -14,7 +14,7 @@ This project implements WEB video calls using [WebRTC](https://webrtc.org), a te
 
 <h2>Required NPM packages</h2>
 
-|  Módulo    | Objetivo                                                  |
+|  Module    | Purpose                                                   |
 | -------------------------: | ----------------------------------------- |
 | `Express`  | Create a web server to serve statically the test page     |
 | `SocketIO` | Synchronizes events between callers                       |
@@ -61,7 +61,6 @@ Check more support details in [Can I use](https://caniuse.com/#search=webrtc).
 
 <h2>Contribution suggestions</h2>
 
-- Test page styling
 - Call start from a button
 - Allow room creation
 - Improve responsiveness for mobile devices
