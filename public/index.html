@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Video Chat</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="Video Chat.">
+    <meta name="author" content="Brian Mau">
+    <link href="/css/main.css" rel="stylesheet">
+  </head>
+  <body>
+    
+    <div class="video-container">
+      <video class="localVideo" playsinline autoplay muted></video>
+
+      <video class="remoteVideo" playsinline autoplay></video>
+    </div>
+
+    <div class="text-container">
+      <textarea id="textarea"></textarea>
+    </div>
+
+    <button id="end-call">DESLIGAR</button>
+
+    <script src='/socket.io/socket.io.js'></script>
+    <script src="/js/video.js"></script>
+</body>
+</html>
