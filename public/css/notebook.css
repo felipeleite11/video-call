@@ -1,0 +1,64 @@
+/* https://codepen.io/ericfennis/pen/aGdvjG?editors=1000  */
+ 
+ main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 500px;
+	margin: 0 auto;
+  }
+  
+  .svgwrapper {
+	width: calc(100% - 20px);
+	display: block;
+	perspective: 980px;
+	padding: 2px;
+	-webkit-background-clip: padding-box;
+  }
+  
+  svg {
+	margin: 0;
+  }
+
+  svg#laptop-screen {
+	padding: 2px;
+	margin-bottom: -5px;
+	transform-style: preserve-3d;
+	transform: rotateX(-90deg);
+	-webkit-backface-visibility: hidden;
+	transition: transform ease-out .4s;
+	transform-origin: 0 100%;
+  }
+
+  svg#laptop-screen .screen {
+	fill: #333;
+	transition: fill ease-in .4s .4s;
+  }
+
+  svg#laptop-keyboard {
+	position: relative;
+	z-index: 1;
+	margin: 0 auto;
+	display: block;
+	filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.4));
+  }
+
+  svg#laptop-screen.open {
+	transform: rotateX(0);
+	filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.4));
+  }
+
+  svg#laptop-screen.open .screen {
+	fill: #ccc;
+  }
+  
+  .button-wrapper {
+	width: 480px;
+	margin: 30px auto 0;
+	text-align: center;
+  }
+
+  .button-wrapper button:hover {
+	background: #ff7441;
+  }
+  

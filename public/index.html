@@ -4,25 +4,69 @@
     <title>Video Chat</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta name="description" content="Video Chat.">
-    <meta name="author" content="Brian Mau">
-    <link href="/css/main.css" rel="stylesheet">
-  </head>
-  <body>
-    
-    <div class="video-container">
-      <video class="localVideo" playsinline autoplay muted></video>
-
-      <video class="remoteVideo" playsinline autoplay></video>
-    </div>
-
-    <div class="text-container">
-      <textarea id="textarea"></textarea>
-    </div>
-
-    <button id="end-call">DESLIGAR</button>
 
     <script src='/socket.io/socket.io.js'></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="/css/animate.min.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
+    <link href="/css/notebook.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <main>     
+        <div class="svgwrapper animate__animated animate__jackInTheBox">
+          <div id="laptop-screen">
+            <h1 id="loading-call" class="">Waiting for a call...</h1>
+
+            <video class="remoteVideo animate__animated animate__fadeIn show" id="remoteVideo" playsinline autoplay muted></video>
+
+            <video class="localVideo animate__animated animate__fadeIn" id="localVideo" playsinline autoplay muted></video>
+          </div>
+
+          <img src="laptop.svg" alt="" />
+          
+        </div>
+    </main>
+
+
+    <div class="button-container">
+      <button id="end-call" onclick="end()">
+        <i class="material-icons">call_end</i>
+      </button>
+
+      <button id="start-call" onclick="start()">
+        <i class="material-icons">call</i>
+      </button>
+    </div>
+
+    <div class="text-container animate__animated animate__jackInTheBox animate__delay-1s">
+      <textarea id="textarea" placeholder="Escreva aqui..."></textarea>
+    </div>
+     
+
     <script src="/js/video.js"></script>
+
+    <script>
+      const loading = document.getElementById('loading-call')
+      const localVideo = document.getElementById('localVideo')
+      const remoteVideo = document.getElementById('remoteVideo')
+
+      setTimeout(() => {
+        localVideo.classList.add('show')
+      }, 1200)
+
+      function start() {
+        loading.style.display = 'none'
+
+        remoteVideo.classList.add('show')
+      }
+
+      function end() {
+        remoteVideo.classList.remove('show')
+
+        loading.style.display = 'block'
+      }
+    </script>
 </body>
 </html>

@@ -2,6 +2,10 @@
 
 This project implements WEB video calls using [WebRTC](https://webrtc.org), a technology focused on real-time communication via browser or native app.
 
+<p align="center">
+	<img src="https://user-images.githubusercontent.com/54327441/82153287-e83d1b80-983c-11ea-8d6e-cb3ab11aaf07.png" height="250" width="458" alt="Demo screen" />
+</p>
+
 
 <h2>Environment requirements</h2>
 

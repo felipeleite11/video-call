@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" id="laptop-keyboard" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1209 36">
+    <defs>
+        <linearGradient id="linear-gradient" y1="18.06" x2="1208.97" y2="18.06" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#a2a3a6" />
+            <stop offset="0.5" stop-color="#b5b6b8" />
+            <stop offset="1" stop-color="#a2a3a6" />
+        </linearGradient>
+        <linearGradient id="linear-gradient-2" x1="604.48" y1="35.28" x2="604.48" y2="0.84" gradientUnits="userSpaceOnUse">
+            <stop offset="0" />
+            <stop offset="0.64" stop-opacity="0" />
+        </linearGradient>
+        <linearGradient id="linear-gradient-3" x1="604.48" y1="0.84" x2="604.48" y2="12.32" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#eee" />
+            <stop offset="1" stop-color="#f6f6f6" />
+        </linearGradient>
+        <linearGradient id="linear-gradient-4" x1="604.48" y1="8.37" x2="604.48" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#737375" />
+            <stop offset="1" stop-color="#b3b2b2" />
+        </linearGradient>
+    </defs>
+    <title>Asset 7</title>
+    <g id="Layer_2" data-name="Layer 2">
+        <g id="Layer_1-2" data-name="Layer 1">
+            <g id="Laptop">
+                <g id="keyboard">
+                    <path d="M1204.7.8H4.3A4.3,4.3,0,0,0,0,5.1V6.9a7.4,7.4,0,0,0,4.3,6.4c18,7.3,60.3,22,78.2,22h1044c17.9,0,60.2-14.7,78.2-22a7.6,7.6,0,0,0,4.3-6.4V5.1A4.4,4.4,0,0,0,1204.7.8Z" style="fill:url(#linear-gradient)" />
+                    <g style="opacity:0.12">
+                        <path d="M1204.7.8H4.3A4.3,4.3,0,0,0,0,5.1V6.9a7.4,7.4,0,0,0,4.3,6.4c18,7.3,60.3,22,78.2,22h1044c17.9,0,60.2-14.7,78.2-22a7.6,7.6,0,0,0,4.3-6.4V5.1A4.4,4.4,0,0,0,1204.7.8Z" style="fill:url(#linear-gradient-2)" />
+                    </g>
+                    <rect x="0.7" y="0.8" width="1207.5" height="11.48" rx="4.3" ry="4.3" style="fill:url(#linear-gradient-3)" />
+                    <rect x="0.7" y="0.8" width="1207.5" height="11.48" rx="4.3" ry="4.3" style="fill:none;stroke:#eee;stroke-miterlimit:10;stroke-width:1.43497733716749px" />
+                    <g style="opacity:0.64">
+                        <path d="M540.9,0c0,2.9,5,8.4,14.1,8.4h99c9,0,14.1-5.5,14.1-8.4Z" style="fill:url(#linear-gradient-4)" />
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
